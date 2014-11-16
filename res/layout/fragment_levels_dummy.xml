@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Levels$DummySectionFragment" 
+    android:background="#53ae31">
+    
+    
+    
+    <TextView
+        android:id="@+id/section_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btn5"
+        android:tag="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Level 5" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:tag="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn5"
+        android:layout_alignLeft="@+id/btn5"
+        android:layout_marginBottom="52dp"
+        android:text="Level 2" />
+
+    <Button
+        android:id="@+id/btn8"
+        android:tag="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn5"
+        android:layout_below="@+id/btn5"
+        android:layout_marginTop="38dp"
+        android:text="Level 8" />
+
+    <Button
+        android:id="@+id/btn6"
+        android:tag="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn5"
+        android:layout_alignBottom="@+id/btn5"
+        android:layout_alignParentRight="true"
+        android:text="Level 6" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:tag="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn8"
+        android:layout_alignParentLeft="true"
+        android:text="Level 4" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:tag="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn2"
+        android:layout_alignBottom="@+id/btn2"
+        android:layout_alignParentRight="true"
+        android:text="Level 3" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:tag="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn2"
+        android:layout_alignBottom="@+id/btn2"
+        android:layout_alignLeft="@+id/btn4"
+        android:text="Level 1" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:tag="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn8"
+        android:layout_alignBottom="@+id/btn8"
+        android:layout_alignLeft="@+id/btn4"
+        android:text="Level 7" />
+
+    <Button
+        android:id="@+id/btn9"
+        android:tag="9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn8"
+        android:layout_alignBottom="@+id/btn8"
+        android:layout_alignRight="@+id/btn6"
+        android:text="Level 9" />
+
+</RelativeLayout>

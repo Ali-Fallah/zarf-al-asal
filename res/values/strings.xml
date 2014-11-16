@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, MainActivity!</string>
+    <string name="app_name">ظرف العسل</string>
+    <string name="about">این برنامه در جهت ترویج ضرب المثل هایی شکل گرفته است که در محاوره های ایرانیان نادیده گرفته شده اند. در هر مرحله از این  اپلیکیشن سرگرمی-آموزشی ضرب المثل ها مورد پرسش قرار گرفته اند که قسمتی از آنان ناقص بوده و باید توسط شما تکمیل شوند. موفق باشید!</string>
+    <string name="dc">salam</string>
+    <string name="about_hd_1">طراحی و اجرا توسط گروه</string>
+    <string name="about_hd_2">((Helli5 Developers))</string>
+    <string name="about_hd_3">تمامی حقوق اپلیکیشن محفوظ می باشد</string>
+    <string name="about_hd_4">با تشکر از:</string>
+    <string name="about_hd_5">آقای مهدی مظاهری</string>
+    <string name="about_hd_6">آقای سروش خرم</string>
+    <string name="title_activity_bazi">bazi</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">Menu</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_marahel">Marahel</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_activity_levels">Levels</string>
+
+</resources>

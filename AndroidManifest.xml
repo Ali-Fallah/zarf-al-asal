@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="ir.HD.zarf_al_asal"
+    android:installLocation="auto"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name="ir.HD.zarf_al_asal.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ir.HD.zarf_al_asal.About"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ir.HD.zarf_al_asal.AboutHD"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ir.HD.zarf_al_asal.BaziActivity"
+            android:label="@string/title_activity_bazi"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="ir.HD.zarf_al_asal.Menu"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="ir.HD.zarf_al_asal.Levels"
+            android:label="@string/title_activity_levels" >
+        </activity>
+    </application>
+
+</manifest>
