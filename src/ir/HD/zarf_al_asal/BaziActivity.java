@@ -123,7 +123,7 @@ public class BaziActivity extends Activity {
 		
 		
 //		gereftan javab
-		answer.setText(" ");
+		answer.setText("");
 		
 		btn1.setOnClickListener(new OnClickListener() {
 			
@@ -214,7 +214,9 @@ public class BaziActivity extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				String ans = answer.getText().toString();
-				answer.setText(ans.substring(0, ans.length()-1)) ;
+				if ( ans != ""){
+					answer.setText(ans.substring(0, ans.length()-1)) ;
+				}
 			}
 		});
 		
