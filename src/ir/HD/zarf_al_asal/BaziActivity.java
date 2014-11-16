@@ -214,7 +214,7 @@ public class BaziActivity extends Activity {
 			public void onClick(View arg0) {
 				// TODO Auto-generated method stub
 				String ans = answer.getText().toString();
-				if ( ans != ""){
+				if ( ans.length() > 0 	){
 					answer.setText(ans.substring(0, ans.length()-1)) ;
 				}
 			}
