@@ -3,13 +3,16 @@ package ir.HD.zarf_al_asal;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.json.simple.parser.ParseException;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -67,7 +70,7 @@ public class BaziActivity extends Activity {
 	
 	
 	
-	
+	String jav = null;
 	
 	
 	@Override
@@ -90,8 +93,9 @@ public class BaziActivity extends Activity {
 		String str = intent.getStringExtra("level") ;
 //		Toast.makeText(getApplicationContext(), s, 3000).show();
 		final int n = Integer.parseInt(str) ;
+		
 		try {
-			String jav = getJavab(n);
+			jav = getJavab(n);// javab soal dar JSON
 			tv.setText(getSentence(n)) ;
 			String ch = getChar(n) ;
 			btn1.setText(Character.toString(ch.charAt(0))) ;
@@ -132,6 +136,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn1.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		btn2.setOnClickListener(new OnClickListener() {
@@ -141,6 +150,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn2.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		btn3.setOnClickListener(new OnClickListener() {
@@ -150,6 +164,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn3.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 //				Toast.makeText(getApplicationContext(), answer.getText().toString(), 3000).show();
 			}
 		});
@@ -160,6 +179,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn4.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		btn5.setOnClickListener(new OnClickListener() {
@@ -169,6 +193,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn5.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		btn6.setOnClickListener(new OnClickListener() {
@@ -178,6 +207,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn6.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		btn7.setOnClickListener(new OnClickListener() {
@@ -187,6 +221,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn7.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		btn8.setOnClickListener(new OnClickListener() {
@@ -196,6 +235,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn8.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		btn9.setOnClickListener(new OnClickListener() {
@@ -205,6 +249,11 @@ public class BaziActivity extends Activity {
 				// TODO Auto-generated method stub
 				String ans =  answer.getText().toString() ;
 				answer.setText(ans+(btn9.getText().toString()));
+				ans =  answer.getText().toString() ;
+				Log.d("MILK","answer: "+ans);
+				if(jav.equals(ans))
+					Log.d("MILK","YES");
+
 			}
 		});
 		//payan gereftan javab
@@ -220,6 +269,10 @@ public class BaziActivity extends Activity {
 			}
 		});
 		
+		
+		
+		String ans = answer.getText().toString() ; // javabe vared shode user
+		Log.d("MILK","javab: "+jav);
 		
 		
 		
