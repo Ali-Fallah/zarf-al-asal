@@ -21,6 +21,12 @@ public class Levels extends FragmentActivity {
 
 	SectionsPagerAdapter mSectionsPagerAdapter;
 	ViewPager mViewPager;
+	
+	public void onBackPressed()
+	{
+		Intent home = new Intent(Levels.this , MainActivity.class);
+		startActivity(home);
+	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {

@@ -98,15 +98,27 @@ public class BaziActivity extends Activity {
 			jav = getJavab(n);// javab soal dar JSON
 			tv.setText(getSentence(n)) ;
 			String ch = getChar(n) ;
-			btn1.setText(Character.toString(ch.charAt(0))) ;
-			btn2.setText(Character.toString(ch.charAt(1))) ;
-			btn3.setText(Character.toString(ch.charAt(2))) ;
-			btn4.setText(Character.toString(ch.charAt(3))) ;
-			btn5.setText(Character.toString(ch.charAt(4))) ;
-			btn6.setText(Character.toString(ch.charAt(5))) ;
-			btn7.setText(Character.toString(ch.charAt(6))) ;
-			btn8.setText(Character.toString(ch.charAt(7))) ;
-			btn9.setText(Character.toString(ch.charAt(8))) ;
+			//set buttons chars
+			int a[] = new int[9] ;
+			for (int i = 0 ; i < 9 ;i++){
+				a[i] = (int)(Math.random() * 9 ) ;
+				for (int j = 0 ; j < i ;j++ ){
+					if ( a[i] == a[j] ){
+						i-- ;
+						break ;
+					}
+				}
+			}
+			btn1.setText(Character.toString(ch.charAt(a[0]))) ;
+			btn2.setText(Character.toString(ch.charAt(a[1]))) ;
+			btn3.setText(Character.toString(ch.charAt(a[2]))) ;
+			btn4.setText(Character.toString(ch.charAt(a[3]))) ;
+			btn5.setText(Character.toString(ch.charAt(a[4]))) ;
+			btn6.setText(Character.toString(ch.charAt(a[5]))) ;
+			btn7.setText(Character.toString(ch.charAt(a[6]))) ;
+			btn8.setText(Character.toString(ch.charAt(a[7]))) ;
+			btn9.setText(Character.toString(ch.charAt(a[8]))) ;
+			//finish set buttons chars
 		} catch (FileNotFoundException e) {
 
 
@@ -139,8 +151,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		btn2.setOnClickListener(new OnClickListener() {
@@ -153,8 +172,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		btn3.setOnClickListener(new OnClickListener() {
@@ -167,9 +193,16 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
-//				Toast.makeText(getApplicationContext(), answer.getText().toString(), 3000).show();
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
+//				Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 			}
 		});
 		btn4.setOnClickListener(new OnClickListener() {
@@ -182,8 +215,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		btn5.setOnClickListener(new OnClickListener() {
@@ -196,8 +236,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		btn6.setOnClickListener(new OnClickListener() {
@@ -210,8 +257,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		btn7.setOnClickListener(new OnClickListener() {
@@ -224,8 +278,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		btn8.setOnClickListener(new OnClickListener() {
@@ -238,8 +299,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		btn9.setOnClickListener(new OnClickListener() {
@@ -252,8 +320,15 @@ public class BaziActivity extends Activity {
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
-					Log.d("MILK","YES");
-
+				{
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
+					if ( n < 20 )
+					{
+						newIntent.putExtra("level","" + (n+1)) ;
+						startActivity(newIntent);
+					}
+				}
 			}
 		});
 		//payan gereftan javab
@@ -270,10 +345,10 @@ public class BaziActivity extends Activity {
 		});
 		
 		
-		
+		//debugging
 		String ans = answer.getText().toString() ; // javabe vared shode user
 		Log.d("MILK","javab: "+jav);
-		
+		// finish debugging
 		
 		
 		
@@ -281,7 +356,11 @@ public class BaziActivity extends Activity {
 		
 	}
 	
-	
+	public void onBackPressed()
+	{
+		Intent myIntent = new Intent(BaziActivity.this , Levels.class);
+		startActivity(myIntent);
+	}
 	
 	
 	
