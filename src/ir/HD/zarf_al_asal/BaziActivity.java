@@ -154,7 +154,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -175,7 +175,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -196,7 +196,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -218,7 +218,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -239,7 +239,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -260,7 +260,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -281,7 +281,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -302,7 +302,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
@@ -323,7 +323,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 20 )
+					if ( n < 27 )
 					{
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
