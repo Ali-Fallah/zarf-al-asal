@@ -140,8 +140,9 @@
         android:id="@+id/erase"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tv_answer"
         android:layout_alignParentLeft="true"
-        android:layout_alignTop="@+id/tv_answer"
+        android:layout_marginBottom="18dp"
         android:text="erase"
         android:textSize="20dp" />
 
