@@ -346,8 +346,8 @@ public class BaziActivity extends Activity {
 		
 		
 		//debugging
-		String ans = answer.getText().toString() ; // javabe vared shode user
-		Log.d("MILK","javab: "+jav);
+//		String ans = answer.getText().toString() ; // javabe vared shode user
+//		Log.d("MILK","javab: "+jav);
 		// finish debugging
 		
 		
