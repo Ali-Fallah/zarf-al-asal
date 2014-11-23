@@ -152,7 +152,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -173,7 +173,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -194,7 +194,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -202,7 +202,7 @@ public class BaziActivity extends Activity {
 						startActivity(newIntent);
 					}
 				}
-//				Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+//				Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 			}
 		});
 		btn4.setOnClickListener(new OnClickListener() {
@@ -216,7 +216,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -237,7 +237,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -258,7 +258,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -279,7 +279,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -300,7 +300,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -321,7 +321,7 @@ public class BaziActivity extends Activity {
 				Log.d("MILK","answer: "+ans);
 				if(jav.equals(ans))
 				{
-					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , 5000).show();
+					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
@@ -349,11 +349,7 @@ public class BaziActivity extends Activity {
 //		String ans = answer.getText().toString() ; // javabe vared shode user
 //		Log.d("MILK","javab: "+jav);
 		// finish debugging
-		
-		
-		
-		
-		
+				
 	}
 	
 	public void onBackPressed()
