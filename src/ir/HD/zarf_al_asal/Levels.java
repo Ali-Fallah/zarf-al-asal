@@ -108,8 +108,6 @@ public class Levels extends FragmentActivity {
 				Bundle savedInstanceState) {
 			View rootView = inflater.inflate(R.layout.fragment_levels_dummy,
 					container, false);
-			final TextView dummyTextView = (TextView) rootView.findViewById(R.id.section_label);
-			dummyTextView.setText(Integer.toString(getArguments().getInt(ARG_SECTION_NUMBER)));
 
 //			  BtnListener listener = new BtnListener();
 //		      ((Button) rootView.findViewById(R.id.btn1)).setOnClickListener(listener);
@@ -164,15 +162,15 @@ public class Levels extends FragmentActivity {
 			
 			
 			
-			but1.setText("Level " +((n-1)*9 + id1 )) ;
-			but2.setText("Level " +((n-1)*9 + id2 )) ;
-			but3.setText("Level " +((n-1)*9 + id3 )) ;
-			but4.setText("Level " +((n-1)*9 + id4 )) ;
-			but5.setText("Level " +((n-1)*9 + id5 )) ;
-			but6.setText("Level " +((n-1)*9 + id6 )) ;
-			but7.setText("Level " +((n-1)*9 + id7 )) ;
-			but8.setText("Level " +((n-1)*9 + id8 )) ;
-			but9.setText("Level " +((n-1)*9 + id9 )) ;
+			but1.setText("کندوی " +((n-1)*9 + id1 )) ;
+			but2.setText("کندوی " +((n-1)*9 + id2 )) ;
+			but3.setText("کندوی " +((n-1)*9 + id3 )) ;
+			but4.setText("کندوی " +((n-1)*9 + id4 )) ;
+			but5.setText("کندوی " +((n-1)*9 + id5 )) ;
+			but6.setText("کندوی " +((n-1)*9 + id6 )) ;
+			but7.setText("کندوی " +((n-1)*9 + id7 )) ;
+			but8.setText("کندوی " +((n-1)*9 + id8 )) ;
+			but9.setText("کندوی " +((n-1)*9 + id9 )) ;
 			
 			
 			but1.setOnClickListener(new OnClickListener() {

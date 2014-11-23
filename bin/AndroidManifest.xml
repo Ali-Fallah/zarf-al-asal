@@ -12,14 +12,13 @@
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
-        android:label="@string/app_name" >
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen" >
         <activity
             android:name="ir.HD.zarf_al_asal.Loading"
-            android:label="@string/app_name"
             android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -33,20 +32,19 @@
         </activity>
         <activity
             android:name="ir.HD.zarf_al_asal.BaziActivity"
-            android:label="@string/title_activity_bazi"
             android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ir.HD.zarf_al_asal.Menu"
-            android:label="@string/title_activity_menu" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ir.HD.zarf_al_asal.Levels"
-            android:label="@string/title_activity_levels" >
+            android:screenOrientation="portrait" >
         </activity>
         <activity
             android:name="ir.HD.zarf_al_asal.MainActivity"
-            android:label="@string/title_activity_loading" >
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

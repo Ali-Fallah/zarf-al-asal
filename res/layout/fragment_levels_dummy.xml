@@ -12,11 +12,7 @@
     
     
     
-    <TextView
-        android:id="@+id/section_label"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
-
+    
     <Button
         android:id="@+id/btn5"
         android:tag="5"
@@ -32,8 +28,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_above="@+id/btn5"
-        android:layout_alignLeft="@+id/btn5"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
         android:text="Level 2" />
 
     <Button
@@ -41,9 +37,9 @@
         android:tag="8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignRight="@+id/btn5"
+		android:layout_centerHorizontal="true"
         android:layout_below="@+id/btn5"
-        android:layout_marginTop="38dp"
+        android:layout_marginTop="30dp"
         android:text="Level 8" />
 
     <Button
@@ -61,8 +57,8 @@
         android:tag="4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btn8"
         android:layout_alignParentLeft="true"
+        android:layout_alignBaseline="@+id/btn5"
         android:text="Level 4" />
 
     <Button
