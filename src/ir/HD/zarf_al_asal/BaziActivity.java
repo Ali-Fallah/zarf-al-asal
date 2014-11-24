@@ -11,6 +11,7 @@ import org.json.simple.parser.ParseException;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -77,7 +78,12 @@ public class BaziActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.bazi);
-		TextView tv = (TextView) findViewById(R.id.textView1) ;
+		TextView que = (TextView) findViewById(R.id.textView1) ;
+		//set font for que : start
+		Typeface bDavat = Typeface.createFromAsset(getAssets(),
+				"fonts/BDavat.ttf");
+		que.setTypeface(bDavat);
+		//set font for que : finish
 		final TextView answer = (TextView) findViewById(R.id.tv_answer);
 		final Button btn1 = (Button) findViewById(R.id.button1) ;
 		final Button btn2 = (Button) findViewById(R.id.button2) ;
@@ -96,7 +102,7 @@ public class BaziActivity extends Activity {
 		
 		try {
 			jav = getJavab(n);// javab soal dar JSON
-			tv.setText(getSentence(n)) ;
+			que.setText(getSentence(n)) ;
 			String ch = getChar(n) ;
 			//set buttons chars
 			int a[] = new int[9] ;
@@ -156,8 +162,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -177,8 +185,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -198,8 +208,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 //				Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -220,8 +232,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -241,8 +255,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -262,8 +278,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -283,8 +301,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -304,8 +324,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -325,8 +347,10 @@ public class BaziActivity extends Activity {
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 27 )
 					{
+						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
 						startActivity(newIntent);
+						finish();
 					}
 				}
 			}
@@ -352,11 +376,6 @@ public class BaziActivity extends Activity {
 				
 	}
 	
-	public void onBackPressed()
-	{
-		Intent myIntent = new Intent(BaziActivity.this , Levels.class);
-		startActivity(myIntent);
-	}
 	
 	
 	

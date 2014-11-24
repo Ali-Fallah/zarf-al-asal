@@ -1,6 +1,7 @@
 package ir.HD.zarf_al_asal;
 
 import java.util.Locale;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -15,18 +16,17 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.TextView;
 
 public class Levels extends FragmentActivity {
 
 	SectionsPagerAdapter mSectionsPagerAdapter;
 	ViewPager mViewPager;
 	
-	public void onBackPressed()
-	{
-		Intent home = new Intent(Levels.this , MainActivity.class);
-		startActivity(home);
-	}
+//	public void onBackPressed()
+//	{
+//		Intent home = new Intent(Levels.this , MainActivity.class);
+//		startActivity(home);
+//	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
