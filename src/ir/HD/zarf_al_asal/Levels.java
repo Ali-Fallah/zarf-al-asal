@@ -1,7 +1,5 @@
 package ir.HD.zarf_al_asal;
 
-import java.util.Locale;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -22,11 +20,6 @@ public class Levels extends FragmentActivity {
 	SectionsPagerAdapter mSectionsPagerAdapter;
 	ViewPager mViewPager;
 	
-//	public void onBackPressed()
-//	{
-//		Intent home = new Intent(Levels.this , MainActivity.class);
-//		startActivity(home);
-//	}
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -70,22 +63,9 @@ public class Levels extends FragmentActivity {
 		@Override
 		public int getCount() {
 			// Show 3 total pages.
-			return 3;
+			return 1;
 		}
 
-		@Override
-		public CharSequence getPageTitle(int position) {
-			Locale l = Locale.getDefault();
-			switch (position) {
-			case 0:
-				return getString(R.string.title_section1).toUpperCase(l);
-			case 1:
-				return getString(R.string.title_section2).toUpperCase(l);
-			case 2:
-				return getString(R.string.title_section3).toUpperCase(l);
-			}
-			return null;
-		}
 	}
 
 	/**
@@ -133,6 +113,12 @@ public class Levels extends FragmentActivity {
 			Button but7 = (Button)rootView.findViewById(R.id.btn7);
 			Button but8 = (Button)rootView.findViewById(R.id.btn8);
 			Button but9 = (Button)rootView.findViewById(R.id.btn9);
+			Button but10 = (Button)rootView.findViewById(R.id.btn10);
+			Button but11 = (Button)rootView.findViewById(R.id.btn11);
+			Button but12 = (Button)rootView.findViewById(R.id.btn12);
+			Button but13 = (Button)rootView.findViewById(R.id.btn13);
+			Button but14 = (Button)rootView.findViewById(R.id.btn14);
+			Button but15 = (Button)rootView.findViewById(R.id.btn15);
 			
 			String idAsStr1 = String.valueOf(but1.getTag());
 			String idAsStr2 = String.valueOf(but2.getTag());
@@ -143,7 +129,12 @@ public class Levels extends FragmentActivity {
 			String idAsStr7 = String.valueOf(but7.getTag());
 			String idAsStr8 = String.valueOf(but8.getTag());
 			String idAsStr9 = String.valueOf(but9.getTag());
-			
+			String idAsStr10 = String.valueOf(but10.getTag());
+			String idAsStr11 = String.valueOf(but11.getTag());
+			String idAsStr12 = String.valueOf(but12.getTag());
+			String idAsStr13 = String.valueOf(but13.getTag());
+			String idAsStr14 = String.valueOf(but14.getTag());
+			String idAsStr15 = String.valueOf(but15.getTag());
 			
 			
 			
@@ -157,20 +148,32 @@ public class Levels extends FragmentActivity {
 			final int id7 = Integer.parseInt(idAsStr7);
 			final int id8 = Integer.parseInt(idAsStr8);
 			final int id9 = Integer.parseInt(idAsStr9);
+			final int id10 = Integer.parseInt(idAsStr10);
+			final int id11 = Integer.parseInt(idAsStr11);
+			final int id12 = Integer.parseInt(idAsStr12);
+			final int id13 = Integer.parseInt(idAsStr13);
+			final int id14 = Integer.parseInt(idAsStr14);
+			final int id15 = Integer.parseInt(idAsStr15);
 			
 			
 			
 			
+			but1.setText("کندوی " +((n-1)*15 + id1 )) ;
+			but2.setText("کندوی " +((n-1)*15 + id2 )) ;
+			but3.setText("کندوی " +((n-1)*15 + id3 )) ;
+			but4.setText("کندوی " +((n-1)*15 + id4 )) ;
+			but5.setText("کندوی " +((n-1)*15 + id5 )) ;
+			but6.setText("کندوی " +((n-1)*15 + id6 )) ;
+			but7.setText("کندوی " +((n-1)*15 + id7 )) ;
+			but8.setText("کندوی " +((n-1)*15 + id8 )) ;
+			but9.setText("کندوی " +((n-1)*15 + id9 )) ;
+			but10.setText("کندوی " +((n-1)*15 + id10 )) ;
+			but11.setText("کندوی " +((n-1)*15 + id11 )) ;
+			but12.setText("کندوی " +((n-1)*15 + id12 )) ;
+			but13.setText("کندوی " +((n-1)*15 + id13 )) ;
+			but14.setText("کندوی " +((n-1)*15 + id14 )) ;
+			but15.setText("کندوی " +((n-1)*15 + id15 )) ;
 			
-			but1.setText("کندوی " +((n-1)*9 + id1 )) ;
-			but2.setText("کندوی " +((n-1)*9 + id2 )) ;
-			but3.setText("کندوی " +((n-1)*9 + id3 )) ;
-			but4.setText("کندوی " +((n-1)*9 + id4 )) ;
-			but5.setText("کندوی " +((n-1)*9 + id5 )) ;
-			but6.setText("کندوی " +((n-1)*9 + id6 )) ;
-			but7.setText("کندوی " +((n-1)*9 + id7 )) ;
-			but8.setText("کندوی " +((n-1)*9 + id8 )) ;
-			but9.setText("کندوی " +((n-1)*9 + id9 )) ;
 			
 			
 			but1.setOnClickListener(new OnClickListener() {
@@ -178,7 +181,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id1 ));
+					startGame(((n-1)*15 + id1 ));
 				}
 			});
 			but2.setOnClickListener(new OnClickListener() {
@@ -186,7 +189,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id2 ));
+					startGame(((n-1)*15 + id2 ));
 				}
 			});
 			but3.setOnClickListener(new OnClickListener() {
@@ -194,7 +197,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id3 ));
+					startGame(((n-1)*15 + id3 ));
 				}
 			});
 			but4.setOnClickListener(new OnClickListener() {
@@ -202,7 +205,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id4 ));
+					startGame(((n-1)*15 + id4 ));
 				}
 			});
 			but5.setOnClickListener(new OnClickListener() {
@@ -210,7 +213,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id5 ));
+					startGame(((n-1)*15 + id5 ));
 				}
 			});
 			but6.setOnClickListener(new OnClickListener() {
@@ -218,7 +221,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id6 ));
+					startGame(((n-1)*15 + id6 ));
 				}
 			});
 			but7.setOnClickListener(new OnClickListener() {
@@ -226,7 +229,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id7 ));
+					startGame(((n-1)*15 + id7 ));
 				}
 			});
 			but8.setOnClickListener(new OnClickListener() {
@@ -234,7 +237,7 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id8 ));
+					startGame(((n-1)*15 + id8 ));
 				}
 			});
 			but9.setOnClickListener(new OnClickListener() {
@@ -242,7 +245,55 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*9 + id9 ));
+					startGame(((n-1)*15 + id9 ));
+				}
+			});
+			but10.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startGame(((n-1)*15 + id10 ));
+				}
+			});
+			but11.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startGame(((n-1)*15 + id11 ));
+				}
+			});
+			but12.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startGame(((n-1)*15 + id12 ));
+				}
+			});
+			but13.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startGame(((n-1)*15 + id13 ));
+				}
+			});
+			but14.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startGame(((n-1)*15 + id14 ));
+				}
+			});
+			but15.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View arg0) {
+					// TODO Auto-generated method stub
+					startGame(((n-1)*15 + id15 ));
 				}
 			});
 			

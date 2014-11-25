@@ -9,18 +9,25 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context=".Levels$DummySectionFragment" 
     android:background="#53ae31">
-    
-    
-    
-    
+
+    <Button
+        android:id="@+id/btn8"
+        android:tag="8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Button" />
+
     <Button
         android:id="@+id/btn5"
         android:tag="5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_above="@+id/btn8"
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="Level 5" />
+        android:layout_marginBottom="30dp"
+        android:text="Button" />
 
     <Button
         android:id="@+id/btn2"
@@ -30,66 +37,27 @@
         android:layout_above="@+id/btn5"
         android:layout_marginBottom="30dp"
         android:layout_centerHorizontal="true"
-        android:text="Level 2" />
+        android:text="Button" />
 
     <Button
-        android:id="@+id/btn8"
-        android:tag="8"
+        android:id="@+id/btn11"
+        android:tag="11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-		android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btn5"
+        android:layout_below="@+id/btn8"
         android:layout_marginTop="30dp"
-        android:text="Level 8" />
+        android:layout_centerHorizontal="true"
+        android:text="Button" />
 
     <Button
-        android:id="@+id/btn6"
-        android:tag="6"
+        android:id="@+id/btn14"
+        android:tag="14"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btn5"
-        android:layout_alignBottom="@+id/btn5"
-        android:layout_alignParentRight="true"
-        android:text="Level 6" />
-
-    <Button
-        android:id="@+id/btn4"
-        android:tag="4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignBaseline="@+id/btn5"
-        android:text="Level 4" />
-
-    <Button
-        android:id="@+id/btn3"
-        android:tag="3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btn2"
-        android:layout_alignBottom="@+id/btn2"
-        android:layout_alignParentRight="true"
-        android:text="Level 3" />
-
-    <Button
-        android:id="@+id/btn1"
-        android:tag="1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btn2"
-        android:layout_alignBottom="@+id/btn2"
-        android:layout_alignLeft="@+id/btn4"
-        android:text="Level 1" />
-
-    <Button
-        android:id="@+id/btn7"
-        android:tag="7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/btn8"
-        android:layout_alignBottom="@+id/btn8"
-        android:layout_alignLeft="@+id/btn4"
-        android:text="Level 7" />
+        android:layout_below="@+id/btn11"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="Button" />
 
     <Button
         android:id="@+id/btn9"
@@ -97,8 +65,90 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/btn8"
-        android:layout_alignBottom="@+id/btn8"
-        android:layout_alignRight="@+id/btn6"
-        android:text="Level 9" />
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:text="Button" />
 
+    <Button
+        android:id="@+id/btn6"
+        android:tag="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn5"
+        android:layout_alignParentRight="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn3"
+        android:tag="3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn2"
+        android:layout_alignParentRight="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn12"
+        android:tag="12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn11"
+        android:layout_alignParentRight="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn15"
+        android:tag="15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn14"
+        android:layout_alignParentRight="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:tag="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn2"
+        android:layout_alignParentLeft="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn4"
+        android:tag="4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn5"
+        android:layout_alignParentLeft="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn7"
+        android:tag="7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn8"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn10"
+        android:tag="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn11"
+        android:layout_alignParentLeft="true"
+        android:text="Button" />
+
+    <Button
+        android:id="@+id/btn13"
+        android:tag="13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btn14"
+        android:layout_alignParentLeft="true"
+        android:text="Button" />
+    
 </RelativeLayout>
