@@ -160,7 +160,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -183,7 +183,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -206,7 +206,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -230,7 +230,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -253,7 +253,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -276,7 +276,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -299,7 +299,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -322,7 +322,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
@@ -345,7 +345,7 @@ public class BaziActivity extends Activity {
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
-					if ( n < 27 )
+					if ( n < 45 )
 					{
 						newIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
 						newIntent.putExtra("level","" + (n+1)) ;
