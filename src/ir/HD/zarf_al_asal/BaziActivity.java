@@ -69,9 +69,11 @@ public class BaziActivity extends Activity {
 	
 	
 	
-	
+	int btnNumber = -1  ;
 	
 	String jav = null;
+	
+	
 	
 	
 	@Override
@@ -147,6 +149,8 @@ public class BaziActivity extends Activity {
 //		gereftan javab
 		answer.setText("");
 		
+		final int makeInvisible[] = new int[9] ;
+		
 		btn1.setOnClickListener(new OnClickListener() {
 			
 			@Override
@@ -156,6 +160,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn1.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 1 ;
+				btn1.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -179,6 +186,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn2.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 2 ;
+				btn2.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -202,6 +212,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn3.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 3 ;
+				btn3.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -226,6 +239,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn4.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 4 ;
+				btn4.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -249,6 +265,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn5.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 5 ;
+				btn5.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -272,6 +291,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn6.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 6 ;
+				btn6.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -295,6 +317,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn7.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 7 ;
+				btn7.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -318,6 +343,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn8.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 8 ;
+				btn8.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -341,6 +369,9 @@ public class BaziActivity extends Activity {
 				answer.setText(ans+(btn9.getText().toString()));
 				ans =  answer.getText().toString() ;
 				Log.d("MILK","answer: "+ans);
+				btnNumber++ ;
+				makeInvisible[btnNumber] = 9 ;
+				btn9.setVisibility(View.INVISIBLE) ;
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
@@ -360,6 +391,38 @@ public class BaziActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
+				
+				switch (makeInvisible[btnNumber]) {
+					case 1 :
+						btn1.setVisibility(View.VISIBLE) ;
+						break ;
+					case 2 :
+						btn2.setVisibility(View.VISIBLE) ;
+						break ;
+					case 3 :
+						btn3.setVisibility(View.VISIBLE) ;
+						break ;
+					case 4 :
+						btn4.setVisibility(View.VISIBLE) ;
+						break ;
+					case 5 :
+						btn5.setVisibility(View.VISIBLE) ;
+						break ;
+					case 6 :
+						btn6.setVisibility(View.VISIBLE) ;
+						break ;
+					case 7 :
+						btn7.setVisibility(View.VISIBLE) ;
+						break ;
+					case 8 :
+						btn8.setVisibility(View.VISIBLE) ;
+						break ;
+					case 9 :
+						btn9.setVisibility(View.VISIBLE) ;
+						break ;
+				}
+				btnNumber-- ;
+				
 				// TODO Auto-generated method stub
 				String ans = answer.getText().toString();
 				if ( ans.length() > 0 	){

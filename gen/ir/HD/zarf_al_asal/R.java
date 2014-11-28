@@ -24,13 +24,14 @@ public final class R {
         public static final int about_us=0x7f020000;
         public static final int background=0x7f020001;
         public static final int backspace=0x7f020002;
-        public static final int bowl=0x7f020003;
-        public static final int btn_style=0x7f020004;
-        public static final int exit=0x7f020005;
-        public static final int help=0x7f020006;
-        public static final int highscore=0x7f020007;
-        public static final int ic_launcher=0x7f020008;
-        public static final int start=0x7f020009;
+        public static final int bad=0x7f020003;
+        public static final int bowl=0x7f020004;
+        public static final int btn_style=0x7f020005;
+        public static final int exit=0x7f020006;
+        public static final int help=0x7f020007;
+        public static final int highscore=0x7f020008;
+        public static final int ic_launcher=0x7f020009;
+        public static final int start=0x7f02000a;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f070000;
