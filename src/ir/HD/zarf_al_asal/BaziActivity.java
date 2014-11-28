@@ -86,6 +86,10 @@ public class BaziActivity extends Activity {
 				"fonts/BDavat.ttf");
 		que.setTypeface(bDavat);
 		//set font for que : finish
+		Typeface bTabassom = Typeface.createFromAsset(getAssets(),
+				"fonts/BTabssom.ttf");
+		Typeface bKarim = Typeface.createFromAsset(getAssets(),
+				"fonts/BKarim.ttf");
 		final TextView answer = (TextView) findViewById(R.id.tv_answer);
 		final Button btn1 = (Button) findViewById(R.id.button1) ;
 		final Button btn2 = (Button) findViewById(R.id.button2) ;
@@ -96,6 +100,16 @@ public class BaziActivity extends Activity {
 		final Button btn7 = (Button) findViewById(R.id.button7) ;
 		final Button btn8 = (Button) findViewById(R.id.button8) ;
 		final Button btn9 = (Button) findViewById(R.id.button9) ;
+		btn1.setTypeface(bTabassom);
+		btn2.setTypeface(bTabassom);
+		btn3.setTypeface(bTabassom);
+		btn4.setTypeface(bTabassom);
+		btn5.setTypeface(bTabassom);
+		btn6.setTypeface(bTabassom);
+		btn7.setTypeface(bTabassom);
+		btn8.setTypeface(bTabassom);
+		btn9.setTypeface(bTabassom);
+		answer.setTypeface(bKarim);
 		final Button remLastChar = (Button)findViewById(R.id.erase);
 		Intent intent = getIntent();
 		String str = intent.getStringExtra("level") ;

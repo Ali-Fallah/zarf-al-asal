@@ -2,6 +2,7 @@ package ir.HD.zarf_al_asal;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
@@ -119,7 +120,25 @@ public class Levels extends FragmentActivity {
 			Button but13 = (Button)rootView.findViewById(R.id.btn13);
 			Button but14 = (Button)rootView.findViewById(R.id.btn14);
 			Button but15 = (Button)rootView.findViewById(R.id.btn15);
-			
+			//set font
+			Typeface bNazanin = Typeface.createFromAsset(getAssets(),
+					"fonts/BNazanin.ttf");
+			but1.setTypeface(bNazanin);
+			but2.setTypeface(bNazanin);
+			but3.setTypeface(bNazanin);
+			but4.setTypeface(bNazanin);
+			but5.setTypeface(bNazanin);
+			but6.setTypeface(bNazanin);
+			but7.setTypeface(bNazanin);
+			but8.setTypeface(bNazanin);
+			but9.setTypeface(bNazanin);
+			but10.setTypeface(bNazanin);
+			but11.setTypeface(bNazanin);
+			but12.setTypeface(bNazanin);
+			but13.setTypeface(bNazanin);
+			but14.setTypeface(bNazanin);
+			but15.setTypeface(bNazanin);
+			//finish set font
 			String idAsStr1 = String.valueOf(but1.getTag());
 			String idAsStr2 = String.valueOf(but2.getTag());
 			String idAsStr3 = String.valueOf(but3.getTag());

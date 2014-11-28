@@ -18,6 +18,7 @@
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:text="Button"
+        android:textSize="23dp"
         android:background="@drawable/btn" />
 
     <Button
@@ -29,6 +30,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:text="Button"
+        android:textSize="23dp"
         android:background="@drawable/btn" />
 
     <Button
@@ -40,6 +42,7 @@
         android:layout_marginBottom="30dp"
         android:layout_centerHorizontal="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -51,6 +54,7 @@
         android:layout_marginTop="30dp"
         android:layout_centerHorizontal="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -62,6 +66,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -73,6 +78,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentRight="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -83,6 +89,7 @@
         android:layout_alignBaseline="@+id/btn5"
         android:layout_alignParentRight="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -93,6 +100,7 @@
         android:layout_alignBaseline="@+id/btn2"
         android:layout_alignParentRight="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -103,6 +111,7 @@
         android:layout_alignBaseline="@+id/btn11"
         android:layout_alignParentRight="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -113,6 +122,7 @@
         android:layout_alignBaseline="@+id/btn14"
         android:layout_alignParentRight="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -123,6 +133,7 @@
         android:layout_alignBaseline="@+id/btn2"
         android:layout_alignParentLeft="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -133,6 +144,7 @@
         android:layout_alignBaseline="@+id/btn5"
         android:layout_alignParentLeft="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -144,6 +156,7 @@
         android:layout_alignParentLeft="true"
         android:layout_centerVertical="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -154,6 +167,7 @@
         android:layout_alignBaseline="@+id/btn11"
         android:layout_alignParentLeft="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
 
     <Button
@@ -164,6 +178,7 @@
         android:layout_alignBaseline="@+id/btn14"
         android:layout_alignParentLeft="true"
         android:text="Button" 
+        android:textSize="23dp"
         android:background="@drawable/btn"/>
     
 </RelativeLayout>
