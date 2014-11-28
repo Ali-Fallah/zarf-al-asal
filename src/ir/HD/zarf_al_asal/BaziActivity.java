@@ -16,6 +16,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.view.View.OnLongClickListener;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -86,8 +87,7 @@ public class BaziActivity extends Activity {
 				"fonts/BDavat.ttf");
 		que.setTypeface(bDavat);
 		//set font for que : finish
-		Typeface bTabassom = Typeface.createFromAsset(getAssets(),
-				"fonts/BTabssom.ttf");
+		
 		Typeface bKarim = Typeface.createFromAsset(getAssets(),
 				"fonts/BKarim.ttf");
 		final TextView answer = (TextView) findViewById(R.id.tv_answer);
@@ -100,15 +100,15 @@ public class BaziActivity extends Activity {
 		final Button btn7 = (Button) findViewById(R.id.button7) ;
 		final Button btn8 = (Button) findViewById(R.id.button8) ;
 		final Button btn9 = (Button) findViewById(R.id.button9) ;
-		btn1.setTypeface(bTabassom);
-		btn2.setTypeface(bTabassom);
-		btn3.setTypeface(bTabassom);
-		btn4.setTypeface(bTabassom);
-		btn5.setTypeface(bTabassom);
-		btn6.setTypeface(bTabassom);
-		btn7.setTypeface(bTabassom);
-		btn8.setTypeface(bTabassom);
-		btn9.setTypeface(bTabassom);
+		btn1.setTypeface(bDavat);
+		btn2.setTypeface(bDavat);
+		btn3.setTypeface(bDavat);
+		btn4.setTypeface(bDavat);
+		btn5.setTypeface(bDavat);
+		btn6.setTypeface(bDavat);
+		btn7.setTypeface(bDavat);
+		btn8.setTypeface(bDavat);
+		btn9.setTypeface(bDavat);
 		answer.setTypeface(bKarim);
 		final Button remLastChar = (Button)findViewById(R.id.erase);
 		Intent intent = getIntent();
@@ -405,51 +405,68 @@ public class BaziActivity extends Activity {
 			
 			@Override
 			public void onClick(View arg0) {
-				
-				switch (makeInvisible[btnNumber]) {
-					case 1 :
-						btn1.setVisibility(View.VISIBLE) ;
-						break ;
-					case 2 :
-						btn2.setVisibility(View.VISIBLE) ;
-						break ;
-					case 3 :
-						btn3.setVisibility(View.VISIBLE) ;
-						break ;
-					case 4 :
-						btn4.setVisibility(View.VISIBLE) ;
-						break ;
-					case 5 :
-						btn5.setVisibility(View.VISIBLE) ;
-						break ;
-					case 6 :
-						btn6.setVisibility(View.VISIBLE) ;
-						break ;
-					case 7 :
-						btn7.setVisibility(View.VISIBLE) ;
-						break ;
-					case 8 :
-						btn8.setVisibility(View.VISIBLE) ;
-						break ;
-					case 9 :
-						btn9.setVisibility(View.VISIBLE) ;
-						break ;
-				}
-				btnNumber-- ;
+			
 				
 				// TODO Auto-generated method stub
 				String ans = answer.getText().toString();
 				if ( ans.length() > 0 	){
+					
+					switch (makeInvisible[btnNumber]) {
+						case 1 :
+							btn1.setVisibility(View.VISIBLE) ;
+							break ;
+						case 2 :
+							btn2.setVisibility(View.VISIBLE) ;
+							break ;
+						case 3 :
+							btn3.setVisibility(View.VISIBLE) ;
+							break ;
+						case 4 :
+							btn4.setVisibility(View.VISIBLE) ;
+							break ;
+						case 5 :
+							btn5.setVisibility(View.VISIBLE) ;
+							break ;
+						case 6 :
+							btn6.setVisibility(View.VISIBLE) ;
+							break ;
+						case 7 :
+							btn7.setVisibility(View.VISIBLE) ;
+							break ;
+						case 8 :
+							btn8.setVisibility(View.VISIBLE) ;
+							break ;
+						case 9 :
+							btn9.setVisibility(View.VISIBLE) ;
+							break ;
+					}
+					btnNumber-- ;
 					answer.setText(ans.substring(0, ans.length()-1)) ;
 				}
 			}
 		});
 		
+		remLastChar.setOnLongClickListener(new OnLongClickListener() {
+			
+			@Override
+			public boolean onLongClick(View arg0) {
+				// TODO Auto-generated method stub
+				answer.setText("") ;
+				btn1.setVisibility(View.VISIBLE);
+				btn2.setVisibility(View.VISIBLE);
+				btn3.setVisibility(View.VISIBLE);
+				btn4.setVisibility(View.VISIBLE);
+				btn5.setVisibility(View.VISIBLE);
+				btn6.setVisibility(View.VISIBLE);
+				btn7.setVisibility(View.VISIBLE);
+				btn8.setVisibility(View.VISIBLE);
+				btn9.setVisibility(View.VISIBLE);
+				btnNumber = -1 ;
+				return false;
+			}
+		});
 		
-		//debugging
-//		String ans = answer.getText().toString() ; // javabe vared shode user
-//		Log.d("MILK","javab: "+jav);
-		// finish debugging
+		
 				
 	}
 	
