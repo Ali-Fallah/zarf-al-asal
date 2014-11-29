@@ -11,6 +11,7 @@ import org.json.simple.parser.ParseException;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.util.Log;
@@ -180,6 +181,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -206,6 +208,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -232,6 +235,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -259,6 +263,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -285,6 +290,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -311,6 +317,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -337,6 +344,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -363,6 +371,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -389,6 +398,7 @@ public class BaziActivity extends Activity {
 				if(jav.equals(ans))
 				{
 					Toast.makeText(getApplicationContext(), "آفرین، درست بود" , Toast.LENGTH_LONG).show();
+					saveInt(n+1) ;
 					Intent newIntent = new Intent (BaziActivity.this , BaziActivity.class);
 					if ( n < 45 )
 					{
@@ -471,7 +481,13 @@ public class BaziActivity extends Activity {
 	}
 	
 	
-	
+	public void saveInt(int value)
+    {
+    	SharedPreferences sp = getSharedPreferences("your_prefs", Activity.MODE_PRIVATE);
+    	SharedPreferences.Editor editor = sp.edit();
+    	editor.putInt("Level", value);
+    	editor.commit();
+    }
 	
 
 }

@@ -1,7 +1,9 @@
 package ir.HD.zarf_al_asal;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Typeface;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -15,6 +17,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class Levels extends FragmentActivity {
 
@@ -193,6 +196,7 @@ public class Levels extends FragmentActivity {
 			but14.setText("کندوی " +((n-1)*15 + id14 )) ;
 			but15.setText("کندوی " +((n-1)*15 + id15 )) ;
 			
+			final int loadLevel = loadInt() ;
 			
 			
 			but1.setOnClickListener(new OnClickListener() {
@@ -200,7 +204,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id1 ));
+					if ((n-1)*15 + id1<=loadLevel){
+						startGame(((n-1)*15 + id1 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but2.setOnClickListener(new OnClickListener() {
@@ -208,7 +218,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id2 ));
+					if ((n-1)*15 + id2<=loadLevel){
+						startGame(((n-1)*15 + id2 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but3.setOnClickListener(new OnClickListener() {
@@ -216,7 +232,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id3 ));
+					if ((n-1)*15 + id3<=loadLevel){
+						startGame(((n-1)*15 + id3 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but4.setOnClickListener(new OnClickListener() {
@@ -224,7 +246,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id4 ));
+					if ((n-1)*15 + id4<=loadLevel){
+						startGame(((n-1)*15 + id4 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but5.setOnClickListener(new OnClickListener() {
@@ -232,7 +260,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id5 ));
+					if ((n-1)*15 + id5<=loadLevel){
+						startGame(((n-1)*15 + id5 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but6.setOnClickListener(new OnClickListener() {
@@ -240,7 +274,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id6 ));
+					if ((n-1)*15 + id6<=loadLevel){
+						startGame(((n-1)*15 + id6 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but7.setOnClickListener(new OnClickListener() {
@@ -248,7 +288,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id7 ));
+					if ((n-1)*15 + id7<=loadLevel){
+						startGame(((n-1)*15 + id7 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but8.setOnClickListener(new OnClickListener() {
@@ -256,7 +302,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id8 ));
+					if ((n-1)*15 + id8<=loadLevel){
+						startGame(((n-1)*15 + id8 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but9.setOnClickListener(new OnClickListener() {
@@ -264,7 +316,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id9 ));
+					if ((n-1)*15 + id9<=loadLevel){
+						startGame(((n-1)*15 + id9 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but10.setOnClickListener(new OnClickListener() {
@@ -272,7 +330,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id10 ));
+					if ((n-1)*15 + id10<=loadLevel){
+						startGame(((n-1)*15 + id10 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					};
 				}
 			});
 			but11.setOnClickListener(new OnClickListener() {
@@ -280,7 +344,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id11 ));
+					if ((n-1)*15 + id11<=loadLevel){
+						startGame(((n-1)*15 + id11 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but12.setOnClickListener(new OnClickListener() {
@@ -288,7 +358,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id12 ));
+					if ((n-1)*15 + id12<=loadLevel){
+						startGame(((n-1)*15 + id12 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but13.setOnClickListener(new OnClickListener() {
@@ -296,7 +372,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id13 ));
+					if ((n-1)*15 + id13<=loadLevel){
+						startGame(((n-1)*15 + id13 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but14.setOnClickListener(new OnClickListener() {
@@ -304,7 +386,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id14 ));
+					if ((n-1)*15 + id14<=loadLevel){
+						startGame(((n-1)*15 + id14 ));
+					}
+					else
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			but15.setOnClickListener(new OnClickListener() {
@@ -312,7 +400,13 @@ public class Levels extends FragmentActivity {
 				@Override
 				public void onClick(View arg0) {
 					// TODO Auto-generated method stub
-					startGame(((n-1)*15 + id15 ));
+					if (((n-1)*15 + id15)<=loadLevel){
+						startGame(((n-1)*15 + id15 ));
+					}
+					else if ((n-1)*15 + id1 > loadLevel)
+					{
+						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
+					}
 				}
 			});
 			
@@ -322,7 +416,11 @@ public class Levels extends FragmentActivity {
 		}
 	
 	
-	
+		public int loadInt(){
+	    	SharedPreferences sp = getSharedPreferences("your_prefs", Activity.MODE_PRIVATE);
+	    	int myIntValue = sp.getInt("Level", 1);
+	    	return myIntValue ;
+	    }
 	
 	
 	public final void startGame(int id){
