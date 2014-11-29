@@ -23,6 +23,7 @@ public class Levels extends FragmentActivity {
 
 	SectionsPagerAdapter mSectionsPagerAdapter;
 	ViewPager mViewPager;
+	int loadLevel ;
 	
 
 	@Override
@@ -196,13 +197,13 @@ public class Levels extends FragmentActivity {
 			but14.setText("کندوی " +((n-1)*15 + id14 )) ;
 			but15.setText("کندوی " +((n-1)*15 + id15 )) ;
 			
-			final int loadLevel = loadInt() ;
 			
 			
 			but1.setOnClickListener(new OnClickListener() {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id1<=loadLevel){
 						startGame(((n-1)*15 + id1 ));
@@ -217,6 +218,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id2<=loadLevel){
 						startGame(((n-1)*15 + id2 ));
@@ -231,6 +233,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id3<=loadLevel){
 						startGame(((n-1)*15 + id3 ));
@@ -245,6 +248,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id4<=loadLevel){
 						startGame(((n-1)*15 + id4 ));
@@ -259,6 +263,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id5<=loadLevel){
 						startGame(((n-1)*15 + id5 ));
@@ -273,6 +278,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id6<=loadLevel){
 						startGame(((n-1)*15 + id6 ));
@@ -287,6 +293,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id7<=loadLevel){
 						startGame(((n-1)*15 + id7 ));
@@ -301,6 +308,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id8<=loadLevel){
 						startGame(((n-1)*15 + id8 ));
@@ -315,6 +323,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id9<=loadLevel){
 						startGame(((n-1)*15 + id9 ));
@@ -329,6 +338,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id10<=loadLevel){
 						startGame(((n-1)*15 + id10 ));
@@ -343,6 +353,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id11<=loadLevel){
 						startGame(((n-1)*15 + id11 ));
@@ -357,6 +368,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id12<=loadLevel){
 						startGame(((n-1)*15 + id12 ));
@@ -371,6 +383,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id13<=loadLevel){
 						startGame(((n-1)*15 + id13 ));
@@ -385,6 +398,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if ((n-1)*15 + id14<=loadLevel){
 						startGame(((n-1)*15 + id14 ));
@@ -399,6 +413,7 @@ public class Levels extends FragmentActivity {
 				
 				@Override
 				public void onClick(View arg0) {
+					loadLevel = loadInt() ;
 					// TODO Auto-generated method stub
 					if (((n-1)*15 + id15)<=loadLevel){
 						startGame(((n-1)*15 + id15 ));
