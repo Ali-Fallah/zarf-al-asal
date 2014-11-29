@@ -31,11 +31,12 @@ public final class R {
         public static final int help=0x7f020007;
         public static final int highscore=0x7f020008;
         public static final int ic_launcher=0x7f020009;
-        public static final int start=0x7f02000a;
+        public static final int lock=0x7f02000a;
+        public static final int start=0x7f02000b;
     }
     public static final class id {
         public static final int RelativeLayout1=0x7f070000;
-        public static final int action_settings=0x7f07002b;
+        public static final int action_settings=0x7f07003a;
         public static final int btn1=0x7f070022;
         public static final int btn10=0x7f070025;
         public static final int btn11=0x7f07001b;
@@ -51,10 +52,10 @@ public final class R {
         public static final int btn7=0x7f070024;
         public static final int btn8=0x7f070018;
         public static final int btn9=0x7f07001d;
-        public static final int btn_about=0x7f070028;
-        public static final int btn_exit=0x7f070027;
-        public static final int btn_help=0x7f07002a;
-        public static final int btn_start=0x7f070029;
+        public static final int btn_about=0x7f070037;
+        public static final int btn_exit=0x7f070036;
+        public static final int btn_help=0x7f070039;
+        public static final int btn_start=0x7f070038;
         public static final int button1=0x7f070014;
         public static final int button2=0x7f07000d;
         public static final int button3=0x7f070015;
@@ -66,6 +67,21 @@ public final class R {
         public static final int button9=0x7f070011;
         public static final int erase=0x7f070017;
         public static final int imageView1=0x7f070001;
+        public static final int imgV1=0x7f070028;
+        public static final int imgV10=0x7f07002f;
+        public static final int imgV11=0x7f070030;
+        public static final int imgV12=0x7f070031;
+        public static final int imgV13=0x7f070032;
+        public static final int imgV14=0x7f070033;
+        public static final int imgV15=0x7f070034;
+        public static final int imgV2=0x7f070027;
+        public static final int imgV3=0x7f070029;
+        public static final int imgV4=0x7f07002a;
+        public static final int imgV5=0x7f07002b;
+        public static final int imgV6=0x7f07002c;
+        public static final int imgV7=0x7f07002d;
+        public static final int imgV8=0x7f070035;
+        public static final int imgV9=0x7f07002e;
         public static final int pager=0x7f070009;
         public static final int progressBar1=0x7f07000a;
         public static final int textView1=0x7f07000b;

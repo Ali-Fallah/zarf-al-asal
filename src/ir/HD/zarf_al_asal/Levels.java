@@ -17,6 +17,7 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 public class Levels extends FragmentActivity {
@@ -109,6 +110,23 @@ public class Levels extends FragmentActivity {
 			
 			
 			
+			ImageView img1 = (ImageView)rootView.findViewById(R.id.imgV1);
+			ImageView img2 = (ImageView)rootView.findViewById(R.id.imgV2);
+			ImageView img3 = (ImageView)rootView.findViewById(R.id.imgV3);
+			ImageView img4 = (ImageView)rootView.findViewById(R.id.imgV4);
+			ImageView img5 = (ImageView)rootView.findViewById(R.id.imgV5);
+			ImageView img6 = (ImageView)rootView.findViewById(R.id.imgV6);
+			ImageView img7 = (ImageView)rootView.findViewById(R.id.imgV7);
+			ImageView img8 = (ImageView)rootView.findViewById(R.id.imgV8);
+			ImageView img9 = (ImageView)rootView.findViewById(R.id.imgV9);
+			ImageView img10 = (ImageView)rootView.findViewById(R.id.imgV10);
+			ImageView img11 = (ImageView)rootView.findViewById(R.id.imgV11);
+			ImageView img12 = (ImageView)rootView.findViewById(R.id.imgV12);
+			ImageView img13 = (ImageView)rootView.findViewById(R.id.imgV13);
+			ImageView img14 = (ImageView)rootView.findViewById(R.id.imgV14);
+			ImageView img15 = (ImageView)rootView.findViewById(R.id.imgV15);
+			
+			
 			Button but1 = (Button)rootView.findViewById(R.id.btn1);
 			Button but2 = (Button)rootView.findViewById(R.id.btn2);
 			Button but3 = (Button)rootView.findViewById(R.id.btn3);
@@ -197,6 +215,54 @@ public class Levels extends FragmentActivity {
 			but14.setText("کندوی " +((n-1)*15 + id14 )) ;
 			but15.setText("کندوی " +((n-1)*15 + id15 )) ;
 			
+			
+//			loadLevel = loadInt() ;
+			
+			if ((n-1)*15 + id1 <=loadInt()){
+				img1.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id2 <=loadInt()){
+				img2.setVisibility(View.INVISIBLE);
+			}	
+			if ((n-1)*15 + id3 <=loadInt()){
+				img3.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id4 <=loadInt()){
+				img4.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id5 <=loadInt()){
+				img5.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id6 <=loadInt()){
+				img6.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id7 <=loadInt()){
+				img7.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id8 <=loadInt()){
+				img8.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id9 <=loadInt()){
+				img9.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id10 <=loadInt()){
+				img10.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id11 <=loadInt()){
+				img11.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id12 <=loadInt()){
+				img12.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id13 <=loadInt()){
+				img13.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id14 <=loadInt()){
+				img14.setVisibility(View.INVISIBLE);
+			}
+			if ((n-1)*15 + id15 <=loadInt()){
+				img15.setVisibility(View.INVISIBLE);
+			}
 			
 			
 			but1.setOnClickListener(new OnClickListener() {
@@ -418,7 +484,7 @@ public class Levels extends FragmentActivity {
 					if (((n-1)*15 + id15)<=loadLevel){
 						startGame(((n-1)*15 + id15 ));
 					}
-					else if ((n-1)*15 + id1 > loadLevel)
+					else
 					{
 						Toast.makeText(getApplicationContext(), "ای بابا، قفله" , Toast.LENGTH_LONG).show();
 					}
